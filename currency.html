@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>naira currency converter app</title>
+<link rel="stylesheet" href="currency.css">
+</head>
+<body>
+<div id="nairatoday">
+<header><a href="#">Naira Exchange Rates by <span> nairatoday.com </span></a></header>
+<div id="content">
+<div>
+<select id="rate" class="select">
+<option value="bm"> Black Market </option>
+<option value="cbn"> Central Bank of Nigeria </option>
+<option value="bdc"> Bureau De Change </option>
+<option value="moneygram"> Moneygram </option>
+<option value="westernunion"> Western Union </option>
+<option value="fx"> FX </option>
+</select>
+<span class="inverted-triangle">&#9660</span>
+</div>
+<p id="display"> 1USD($) = &#8358; 199 <span> (@ Black Market rate) </span></p>
+<br>
+
+<div class="flex"> 
+<input type="number" name="nairavalue" step="0.000001" id="nairavalue" value="0" />
+<span id="nairaspan" class="seperate"> NGN(&#8358;) </span>
+</div>
+
+<div class="flex">
+<input type="number" name="dollarvalue" id="dollarvalue" step="0.000001" value="0" />
+<div>
+<select id="currency" class="seperate select">
+<option value="0"> USD($) </option>
+<option value="1"> GBP(&pound;) </option>
+<option value="2"> EUR(&euro;) </option>
+</select> 
+<span class="inverted-triangle-two">&#9660</span>
+</div>
+</div>
+</div>
+
+<div id="link">
+Check our website <a  href="#"> nairatoday.com </a> for more forex related news and information.
+</div>
+
+<button id="btn"> Add to website </button>
+
+<script src="currency.js"></script>
+</div>
+</body>
+</html>
